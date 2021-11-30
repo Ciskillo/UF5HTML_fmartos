@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Formulari d'enviament</title>
+        <script type="text/javascript">
+            function validar(){
+            var psswd=document.getElementById("psswd").value;
+            var confpsswd=document.getElementById("confpsswd").value;
+            if(psswd==confpsswd){
+                return true;
+            }
+            else{
+                alert("No coincideix");
+                return false;
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <table style="font-family: Verdana;"  bgcolor= EFEFEF align="center">
+            <input type="hidden" name=id>
+            <tbody>
+                <tr bgcolor="306090">
+                    <td colspan="5" style="border:3px solid #306090"><h2 style="color: rgb(255, 255, 255);">Enviar missatge <img src="Img/gb_reload_s.gif" alt="Logo" align="right"></h2></td>
+                </tr>
+                <tr>
+                    <form style="font-family: Verdana;" align="center" method="GET" action="mailto:franciscojavier.martos@inslapineda.cat" onsubmit="return validar();">
+                    <tr>
+                        <td align="left"><label><strong>USUARI:</strong> <input type="text" id="USUARI:" size="44" required></label></td>
+                        <tr></tr>
+                        <tr></tr>
+                    </tr>
+                    <tr>
+                        <td align="left"><label><strong>CONTRASENYA:</strong> <input type="password" id="psswd" size="35" required></label></td>
+                        <tr></tr>
+                        <tr></tr>
+                    </tr>
+                    <tr>
+                        <td align="left"><strong>Repetició de la contrasenya:</strong> <input type="password" id="confpsswd" size="21" required></td>
+                        <tr></tr>
+                        <tr></tr>
+                    </tr>
+                    <tr>
+                        <td align="left"><label><strong>E-Mail:</strong> <input type="text" method="E-MAIL" size="45"></label></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <td align="left"><strong>ARXIU:</strong> <input type="text" colspan="4" size="45"> <input type="file" ></td>
+                        <tr></tr>
+                        <tr></tr>
+                    </tr>
+                    <tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <td align="left"><strong>IMATGE:</strong> <input type="text" colspan="4" size="43" > <input type="file"></td>
+                        <tr></tr>
+                        <tr></tr>
+                    </tr>
+                    <tr>
+                        <td colspan="5" align="center">El tamany de l'arxiu i de la imatge no pot superar els 4 KB</td>
+                    </tr>
+                    <tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <td colspan="5" align="center"><strong>Requereixo resposta:<label><input type="radio" name="afirmació" id:="SÍ" sizw="40">SÍ</label>
+                            <label><input type="radio" name="afirmació" id="NO" size="40">NO</strong></label></td>
+                    <tr></tr>
+                    <tr></tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            Quins jocs t'interessen?
+                            <tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <td><input type="checkbox" name="Spider-Man" id="check">Marvel Spider-Man</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Avengers" id="check">Marvel Avengers</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Injustice" id="check">Injustice 2</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Batman" id="check">Batman Arkham Knight</td>
+                            </tr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr></tr>
+                        <th colspan="5" align="center"><strong>MISSATGE</strong></th>
+                    </tr>
+                    <tr>
+                        <tr></tr>
+                        <td colspan="5" align="center"><label><textarea id="DESCRIPCIÓ" cols="50" rows="5"></textarea></label></td>
+                    </tr>
+                    <tr>
+                        <tr></tr>
+                        <td align="center"><label><input type="submit" value="Enviar"/> <input type="reset" value="Borrar" /></label></td>
+                    </tr>
+                    </form>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+                
+                
+                
+        
